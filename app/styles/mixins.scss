@@ -1,0 +1,36 @@
+@mixin transitionAllLinear($time) {
+	-webkit-transition: all $time linear 0s;
+    -moz-transition: all $time linear 0s;
+    -o-transition: all $time linear 0s;
+    -ms-transition: all $time linear 0s;
+    transition: all $time linear 0s;
+}
+
+@mixin transitionAllEasy($time) {
+	-webkit-transition: all $time ease;
+    -moz-transition: all $time ease;
+    -o-transition: all $time ease;
+    -ms-transition: all $time ease;
+    transition: all $time ease;
+}
+
+@mixin transformRotate($rad) {
+    -webkit-transform: rotate($rad);
+    -moz-transform: rotate($rad);
+    -o-transform: rotate($rad);
+    -ms-transform: rotate($rad);
+    transform: rotate($rad);  
+}
+
+@mixin borderRadius($size) {
+    -webkit-border-radius: $size;
+    -moz-border-radius: $size;
+    border-radius: $size;
+}
+
+@mixin backgroundSize($size) {
+    -webkit-background-size: $size; 
+    -moz-background-size: $size; 
+    -o-background-size: $size; 
+    background-size: $size;
+}
